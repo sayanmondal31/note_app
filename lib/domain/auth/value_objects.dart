@@ -1,9 +1,9 @@
 import 'package:dartz/dartz.dart';
 import 'package:flutter/foundation.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:note_app_ddd/core/failures.dart';
-import 'package:note_app_ddd/core/value_objects.dart';
-import 'package:note_app_ddd/core/value_validator.dart';
+import 'package:note_app_ddd/domain/core/failures.dart';
+import 'package:note_app_ddd/domain/core/value_objects.dart';
+import 'package:note_app_ddd/domain/core/value_validator.dart';
 
 
 

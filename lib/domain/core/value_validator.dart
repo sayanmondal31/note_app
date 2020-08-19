@@ -1,7 +1,7 @@
 //for validate email
 import 'package:dartz/dartz.dart';
-import 'package:note_app_ddd/core/failures.dart';
 import 'package:note_app_ddd/domain/auth/value_objects.dart';
+import 'package:note_app_ddd/domain/core/failures.dart';
 
 Either<ValueFailure<String>, String> validateEmailAddress(String input) {
   const emailRegExp =
