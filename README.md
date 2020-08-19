@@ -6,3 +6,6 @@ A new Flutter project.
 
  - The facade pattern (also spelled façade) is a software-design pattern commonly used in object-oriented programming. Analogous to a facade in architecture, a facade is an object that serves as a front-facing interface masking more complex underlying or structural code.
  for (more)[https://en.wikipedia.org/wiki/Facade_pattern]
+
+ for generater code 
+ flutter pub run build_runner watch --delete-conflicting-outputs
