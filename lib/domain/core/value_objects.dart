@@ -8,6 +8,7 @@ abstract class ValueObject<T> {
   const ValueObject();
   Either<ValueFailure<T>, T> get value;
 
+  bool isValid() => value.isRight();
 
 //checking identical or not and returns true or false value
   @override
@@ -22,7 +23,6 @@ abstract class ValueObject<T> {
 
   @override
   String toString() => 'Value(value: $value)';
-
 }
 
 //this type of abstract class heavily replys on generics
