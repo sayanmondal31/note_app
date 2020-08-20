@@ -1,6 +1,7 @@
 import 'package:dartz/dartz.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:note_app_ddd/domain/auth/value_objects.dart';
+import 'package:note_app_ddd/domain/core/errors.dart';
 import 'package:note_app_ddd/domain/core/failures.dart';
 
 @immutable
@@ -8,6 +9,10 @@ abstract class ValueObject<T> {
   const ValueObject();
   Either<ValueFailure<T>, T> get value;
 
+  T getOrCrash(){
+    // id is for identical    
+    return value.fold((f) => throw UnexpectedValueErrr(f), id );
+  }
   bool isValid() => value.isRight();
 
 //checking identical or not and returns true or false value
